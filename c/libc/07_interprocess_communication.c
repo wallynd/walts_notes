@@ -1,0 +1,5 @@
+pipes
+fifos
+socketsA
+semaphores
+
