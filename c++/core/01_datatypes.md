@@ -1,15 +1,20 @@
 
-Fundamental Types
-Void Type
+### Fundamental Types
+
+## Void Type
+
 void - incomplete type
 
-Null Pointer (C++11)
+## Null Pointer (C++11)
+
 std::nullptr_t is the type of the null pointer literal, nullptr. 
 
-Boolean Type
+## Boolean Type
+
 bool - true or false
 
-Character Types
+## Character Types
+
 signed char - signed character representation.
 unsigned char - unsigned character representation. Also used for Raw Memory.
 char - character representation which can be most efficiently processed on the target system (typically signed)
@@ -18,13 +23,14 @@ char16_t - UTF-16 character representation
 char32_t - UTF-32 character representation
 
 
-Integer Types 
+## Integer Types 
 
-- Modifier: Signedness
+# Signedness
+
 signed
 unsigned
 
-- Modifier: Size
+# Modifier: Size
 short
 long 
 long long (C++11)
@@ -42,7 +48,6 @@ signed                 |                        |              |              | 
 signed int             |                        |              |              |              |              |              | 
 unsigned               | unsigned int           |              |              |              |              |              |     
 unsigned int           |                        |              |              |              |              |              | 
-
 long                   | long int               | at least 32  | 32           | 32           | 32           | 64           |     
 long int               |                        |              |              |              |              |              |   
 signed long            |                        |              |              |              |              |              | 
@@ -57,9 +62,9 @@ unsigned long long     | unsigned long long int |              |              | 
 unsigned long long int | (C++11)                |              |              |              |              |              | 
 
 
-Data models
+##Data models
 
-32 bit systems:
+#32 bit systems:
 
 LP32 or 2/4/4 (int is 16-bit, long and pointer are 32-bit)
 - Win16 API
@@ -67,7 +72,7 @@ ILP32 or 4/4/4 (int, long, and pointer are 32-bit);
 - Win32 API
 - Unix and Unix-like systems (Linux, Mac OS X)
 
-64 bit systems:
+#64 bit systems:
 
 LLP64 or 4/4/8 (int and long are 32-bit, pointer is 64-bit)
 - Win64 API
@@ -82,7 +87,33 @@ Long Double - 80-bit x87 floating point type
 
 
 
-Const and Volatile
+## Const and Volatile
+
+const - object cannot be modified
+volatile -  Treated as a side effect. Every access cannot be optimized out or reordered with another side effect. 
+mutable - does not affect the externally visible state of the class
+
+const_cast to remove constness
+
+## Storage Class Specifiers 
+auto - automatic storage duration
+register - automatic storage duration. Also hints to the compiler to place the object in the processor's register.
+static - static or thread storage duration and internal linkage
+extern - static or thread storage duration and external linkage
+thread_local - thread storage duration
+
+
+# Storage Duration
+Automatic - allocated at the beginning of the enclosing code block and deallocated at the end.
+Static - allocated when the program begins and deallocated when the program ends, Only one instance of the object exists.
+Thread - allocated when the thread begins and deallocated when the thread ends, Each thread has its own instance of the object. thread_local can appear together with static or extern to adjust linkage.
+Dynamic -  allocated and deallocated per request by using dynamic memory allocation functions
+
+# Linkage 
+No Linkage - The name can be referred to only from the scope it is in.
+Internal Linkage -  The name can be referred to from all scopes in the current translation unit. STATIC
+External Linkage - The name can be referred to from the scopes in the other translation units. EXTERN
+
 
 SPECIFIERS
 const
