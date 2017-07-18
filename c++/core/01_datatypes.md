@@ -1,5 +1,5 @@
 
-### Fundamental Types
+#Fundamental Types
 
 ## Void Type
 
@@ -25,12 +25,13 @@ char32_t - UTF-32 character representation
 
 ## Integer Types 
 
-# Signedness
+### Signedness
 
 signed
 unsigned
 
-# Modifier: Size
+### Modifier: Size
+
 short
 long 
 long long (C++11)
@@ -72,14 +73,14 @@ ILP32 or 4/4/4 (int, long, and pointer are 32-bit);
 - Win32 API
 - Unix and Unix-like systems (Linux, Mac OS X)
 
-#64 bit systems:
+### 64 bit systems:
 
 LLP64 or 4/4/8 (int and long are 32-bit, pointer is 64-bit)
 - Win64 API
 LP64 or 4/8/8 (int is 32-bit, long and pointer are 64-bit)
 - Unix and Unix-like systems (Linux, Mac OS X)
 
-Floating Point Types
+## Floating Point Types
 
 Float - IEEE-754 32 bit floating point type
 Double - IEEE-754 64 bit floating point type
