@@ -1,5 +1,5 @@
 
-#Fundamental Types
+# Fundamental Types
 
 ## Void Type
 
