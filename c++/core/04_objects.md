@@ -1,6 +1,6 @@
 
 
-### Class Declaration
+# Class Declaration
 
 ```
 class *attribute_list* *class-name* *final-specifier* *base-clause* { *member-specification* }   
@@ -20,7 +20,7 @@ member-specification - list of access specifiers, member object and member funct
 
 ## Class Member Specification
 
-# Member Declarations
+### Member Declarations
 
 1. Non-Static Data Members
 2. Static Data Members
