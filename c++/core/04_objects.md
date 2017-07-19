@@ -6,11 +6,16 @@
 class attribute_list class-name final-specifier base-clause { member-specification }   
 ```
 
-*class* - class or struct keyword. They identical except for the default member access and the default base class access.
-'attribute_list' - optional sequence of any number of attributes, may include alignas specifier
-`class-name` - the name of the class that's being defined
+class - class or struct keyword. They identical except for the default member access and the default base class access.
+
+attribute_list - optional sequence of any number of attributes, may include alignas specifier
+
+class-name - the name of the class that's being defined
+
 final-specifier - optional final keyword indicating class cannot be inherited from
+
 base-clause - optional list of one or more parent classes and the model of inheritance used for each
+
 member-specification - list of access specifiers, member object and member function declarations and definitions 
 
 ## Class Attributes
