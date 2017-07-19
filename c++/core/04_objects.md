@@ -15,7 +15,6 @@ class-name - the name of the class that's being defined
 final-specifier - optional final keyword indicating class cannot be inherited from
 
 base-clause - optional list of one or more parent classes and the model of inheritance used for each
-
 member-specification - list of access specifiers, member object and member function declarations and definitions 
 
 ## Class Attributes
