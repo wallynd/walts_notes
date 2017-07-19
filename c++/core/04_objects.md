@@ -2,9 +2,9 @@
 
 ### Class Declaration
 
-'''
+```
 class attribute_list class-name final-specifier base-clause { member-specification }   
-'''
+```
 
 class - class or struct keyword. They identical except for the default member access and the default base class access.
 attribute_list - optional sequence of any number of attributes, may include alignas specifier
