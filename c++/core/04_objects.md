@@ -15,6 +15,23 @@ class attribute_list class-name final-specifier base-clause { member-specificati
 
 ## Class Attributes
 
+1) simple attribute, such as [[noreturn]]
+2) attribute with a namespace, such as [[gnu::unused]]
+3) attribute with arguments, such as [[deprecated("because")]]
+4) attribute with both a namespace and an argument list [[using CC: opt(1), debug]] // same as [[CC::opt(1), CC::debug]]
+
+# Standard Attributes
+
+[[noreturn]]  Functions Only - Function does not return
+[[carries_dependency]] 
+[[deprecated]](C++14)
+[[deprecated("reason")]](C++14)
+[[fallthrough]](C++17)
+[[nodiscard]](C++17)
+[[maybe_unused]](C++17)
+[[optimize_for_synchronized]]
+
+
 ## Final Specifier 
 
 
